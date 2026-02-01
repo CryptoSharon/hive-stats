@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hive Blockchain Analytics | User Activity & Price Trends</title>
+  <meta name="description" content="Interactive visualization of Hive blockchain active users and price correlation since 2016. 523 weeks of data analyzed.">
+  <meta name="keywords" content="Hive, blockchain, analytics, cryptocurrency, user activity, STEEM">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Hive Blockchain Analytics">
+  <meta property="og:description" content="Interactive visualization of Hive blockchain active users and price correlation since 2016">
+  <meta property="og:type" content="website">
+  
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Hive Blockchain Analytics">
+  <meta name="twitter:description" content="Interactive visualization of Hive blockchain active users and price correlation since 2016">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div id="root"></div>
+  <script>
+    // Load data from static JSON file
+    window.HIVE_STATS_DATA_URL = './data.json';
+  </script>
+  <script type="module" src="./app.js"></script>
+</body>
+</html>

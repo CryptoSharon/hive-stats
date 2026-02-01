@@ -1,0 +1,27 @@
+# Dependencies
+node_modules/
+
+# Environment
+.env
+.env.local
+
+# Database
+*.db
+
+# Build output
+dist/
+public/app.js
+public/styles.css
+public/frontend.js
+
+# IDE
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Vercel
+.vercel
