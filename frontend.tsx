@@ -544,11 +544,23 @@ function App() {
                   </defs>
                   <CartesianGrid strokeDasharray="3 3" stroke="#2a2a3a" />
                   <XAxis
-                    dataKey="displayDate"
+                    dataKey="date"
                     stroke="#606070"
                     tick={{ fill: "#9090a0", fontSize: 11 }}
                     tickLine={{ stroke: "#2a2a3a" }}
                     interval={Math.floor(chartData.length / 12)}
+                    tickFormatter={(value: string) => {
+                      // Convert "2025-W49" to "Dec 2025"
+                      const match = value.match(/^(\d{4})-W(\d+)$/);
+                      if (match) {
+                        const year = parseInt(match[1]);
+                        const week = parseInt(match[2]);
+                        // Approximate the month from week number
+                        const date = new Date(year, 0, 1 + (week - 1) * 7);
+                        return date.toLocaleDateString("en-US", { month: "short", year: "numeric" });
+                      }
+                      return value;
+                    }}
                   />
                   <YAxis
                     yAxisId="users"
