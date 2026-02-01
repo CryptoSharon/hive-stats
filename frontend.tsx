@@ -552,7 +552,7 @@ function App() {
                     tickFormatter={(value: string) => {
                       // Convert "2025-W49" to "Dec 2025"
                       const match = value.match(/^(\d{4})-W(\d+)$/);
-                      if (match) {
+                      if (match && match[1] && match[2]) {
                         const year = parseInt(match[1]);
                         const week = parseInt(match[2]);
                         // Approximate the month from week number
