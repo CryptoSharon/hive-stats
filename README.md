@@ -29,7 +29,7 @@ This project requires a HiveSQL account to fetch blockchain data. HiveSQL provid
 ### Getting HiveSQL Credentials
 
 1. Visit [HiveSQL.io](https://hivesql.io)
-2. Sign up for an account (paid service, ~$10/month)
+2. Sign up for an account (paid service, send 1 HBD to @hivesql to set up the account, it lasts a day, thereafter, the subscription fee is 50 HBD for 1 month or 5 HBD for 1 day)
 3. Once approved, you'll receive:
    - Username
    - Password
